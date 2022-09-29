@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엠윈도우샵-회원가입</title>
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="/css/join2.css">
+</head>
+
+<body>
+    <div id="head_wrap">
+        <div id="main_header">
+            <div id="menubar">
+                <span class="m1"><a href="login.html">로그인</a></span>
+                <span class="m1"><a href="join2.html">회원가입</a></span>
+                <span class="m1" id="l_m1"><a href="cart.html">장바구니</a></span>
+            </div>
+
+            <div id="logo_line">
+                <a href="index.html"><img src="/html/pictures/logo.png" alt="로고"></a>
+
+                <div id="searchForm">
+                    <form id="searchForm1">
+                        <input class="search_txt" type="text">
+                        <Button class="serach_btn"><img src="/html/pictures/search.png"></Button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!-- css를 통해 특정 리스트만 보이게 할수있다.  -->
+        <div id="nav">
+            <ul class="dep1">
+                <li>
+                    <a href="#">카테고리</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">컴퓨터</a>
+                            <ul class="dep3">
+                                <li><a href="#">노트북/pc</a></li>
+                                <li><a href="#">모니터/프린터</a></li>
+                                <li><a href="#">PC주변기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의류</a>
+                            <ul class="dep3">
+                                <li><a href="#">여성의류</a></li>
+                                <li><a href="#">남성의류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가구/인테리어</a>
+                            <ul class="dep3">
+                                <li><a href="#">침구/커튼</a></li>
+                                <li><a href="#">생활용품</a></li>
+                                <li><a href="#">주방용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">식품</a>
+                            <ul class="dep3">
+                                <li><a href="#">신선식품</a></li>
+                                <li><a href="#">건강식품</a></li>
+                                <li><a href="#">커피/음료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">중고거래</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">종류</a>
+                            <ul class="dep3">
+                                <li><a href="#">컴퓨터</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">가구/인테리어</a></li>
+                                <li><a href="#">식품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">내 근처</a>
+                            <ul class="dep3">
+                                <li><a href="#">위치설정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="iframe1">할인상품</a>
+                    <ul class="dep2">
+                        <li><a href="#">초특가 보러가기</a>
+                            <ul class="dep3">
+                                <li><a href="#">당일배송</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">할인정보</a>
+                            <ul class="dep3">
+                                <li><a href="#">~20%</a></li>
+                                <li><a href="#">21~40%</a></li>
+                                <li><a href="#">41~60%</a></li>
+                                <li><a href="#">61~80%</a></li>
+                                <li><a href="#">81~99%</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">무료나눔</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="iframe1">고객센터</a>
+
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">구매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">회원정보</a></li>
+                                <li><a href="#">주문</a></li>
+                                <li><a href="#">결제</a></li>
+                                <li><a href="#">배송</a></li>
+                                <li><a href="#">취소/환불</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">판매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">나의정보관리</a></li>
+                                <li><a href="#">상품/판매관리</a></li>
+                                <li><a href="#">결제/정산/이용료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="join2_content">
+        <p class="header_text">회원가입</p>
+
+        <form>
+            <div id="f1">
+                <fieldset class="fieldset">
+                    <legend>1. 정보입력</legend>
+                    <input type="text" name="name" placeholder="이름">
+                    
+                    <!-- label태그로 묶으면 아이디 지정 필요 없음 -->
+                    <label for:m><input type="radio" id="m" name="gender" placeholder="male">남성</label>
+                    <label for:w><input type="radio" id="w" name="gender" placeholder="female">여성</label>
+                    
+                    
+                    <input type="text" name="userID" placeholder="회원ID">
+                    <input type="password" name="userPW" placeholder="비밀번호">
+                    <input type="password" name="chekcUserPW" placeholder="비밀번호 확인">
+
+                    <div class="with_btn">
+                        <input type="tel" name="userTel" placeholder="전화번호"> <button>인증요청</button>
+                    </div>
+                    <div class="with_btn">
+                        <input type="number" name="code" disabled placeholder="인증코드"> <button>확인</button>
+                    </div>
+
+                    <input type="email" name="userMail" placeholder="이메일">
+                    <input type="text" name="address" placeholder="주소">
+                </fieldset>
+            </div>
+
+            <div id="f2">
+                <fieldset class="fieldset">
+                    <legend>2. 약관동의</legend>
+                    <div class="all_agree">
+                        <label for="agree"><input type="checkbox" id="agree">&nbsp;전체동의</label><br>
+                    </div>
+                    <div class="each_agree">
+                        <label for="a1"><input type="checkbox" id="a1">&nbsp;엠윈도우 이용약관</label>
+                        <label for="a2"><input type="checkbox" id="a2">&nbsp;전자금융거래 이용약관</label>
+                        <label for="a3"><input type="checkbox" id="a3">&nbsp;개인정보 수집 및 이용</label>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div id="bottom_text">
+                <p>
+                    ▶가입은 <em>14세</em> 이상 고객만 가능합니다.<br>
+                    ▶7세 이상 14세 미만 회원은 회원가입 후 모바일에서 본인인증, 법정대리인 인증을 진행하면 서비스를 이용하실 수 있습니다.<br>
+                    ▶고객은 동의를 거부할 권리가 있으며 동의를 거부할 경우, 사이트 가입 또는 일부 서비스 이용이 제한됩니다.<br>
+                </p>
+            </div>
+
+            <div id="click_btn">
+                <input type="button" value="취소" onclick="history.back()">
+                <input type="submit" value="회원가입" onclick="alert('회원가입 성공!!!')">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

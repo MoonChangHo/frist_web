@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id/pw찾기</title>
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="/css/findidpw.css">
+</head>
+
+<body>
+    <div id="head_wrap">
+        <div id="main_header">
+            <div id="menubar">
+                <span class="m1"><a href="login.html">로그인</a></span>
+                <span class="m1"><a href="join2.html">회원가입</a></span>
+                <span class="m1" id="l_m1"><a href="cart.html">장바구니</a></span>
+            </div>
+
+            <div id="logo_line">
+                <a href="index.html"><img src="/html/pictures/logo.png" alt="로고"></a>
+
+                <div id="searchForm">
+                    <form id="searchForm1">
+                        <input class="search_txt" type="text">
+                        <Button class="serach_btn"><img src="/html/pictures/search.png"></Button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!-- css를 통해 특정 리스트만 보이게 할수있다.  -->
+        <div id="nav">
+            <ul class="dep1">
+                <li>
+                    <a href="#">카테고리</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">컴퓨터</a>
+                            <ul class="dep3">
+                                <li><a href="#">노트북/pc</a></li>
+                                <li><a href="#">모니터/프린터</a></li>
+                                <li><a href="#">PC주변기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의류</a>
+                            <ul class="dep3">
+                                <li><a href="#">여성의류</a></li>
+                                <li><a href="#">남성의류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가구/인테리어</a>
+                            <ul class="dep3">
+                                <li><a href="#">침구/커튼</a></li>
+                                <li><a href="#">생활용품</a></li>
+                                <li><a href="#">주방용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">식품</a>
+                            <ul class="dep3">
+                                <li><a href="#">신선식품</a></li>
+                                <li><a href="#">건강식품</a></li>
+                                <li><a href="#">커피/음료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">중고거래</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">종류</a>
+                            <ul class="dep3">
+                                <li><a href="#">컴퓨터</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">가구/인테리어</a></li>
+                                <li><a href="#">식품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">내 근처</a>
+                            <ul class="dep3">
+                                <li><a href="#">위치설정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">할인상품</a>
+                    <ul class="dep2">
+                        <li><a href="#">초특가 보러가기</a>
+                            <ul class="dep3">
+                                <li><a href="#">당일배송</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">할인정보</a>
+                            <ul class="dep3">
+                                <li><a href="#">~20%</a></li>
+                                <li><a href="#">21~40%</a></li>
+                                <li><a href="#">41~60%</a></li>
+                                <li><a href="#">61~80%</a></li>
+                                <li><a href="#">81~99%</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">무료나눔</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">구매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">회원정보</a></li>
+                                <li><a href="#">주문</a></li>
+                                <li><a href="#">결제</a></li>
+                                <li><a href="#">배송</a></li>
+                                <li><a href="#">취소/환불</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">판매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">나의정보관리</a></li>
+                                <li><a href="#">상품/판매관리</a></li>
+                                <li><a href="#">결제/정산/이용료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="findidpw_content">
+
+        <div id="select_idpw">
+            <div class="find_d"><a href="#l1">아이디 찾기</a> </div>
+            <div class="find_d"><a href="#typeid">비밀번호 재설정</a></div>
+        </div>
+
+        <div id="text1">
+            <p>아이디 찾을 방법을 선택해 주세요.</p>
+        </div>
+
+        <div id="how_find_id">
+            <div class="sol">
+                <input type="checkbox" id="f_phone">
+                <label for="f_phone">&nbsp;</label>
+                <label for="f_phone">휴대폰으로 찾기</label>
+
+                <input type="checkbox" id="f_email">
+                <label for="f_email">&nbsp;</label>
+                <label for="f_email">이메일로 찾기</label>
+
+                <div class="sform" id="show_phone_form">
+                    <div class="input_info">
+                        <input type="text" id="l1" placeholder="이름">
+                        <input type="tel" placeholder="휴대폰 번호 (숫자만 입력)" maxlength="15">
+                    </div>
+
+                    <div class="captcha_box">
+                        <!-- CAPTCHA란? : 기계는 인식할 수 없으나 사람은 쉽게 인식할 수 있는 텍스트, 이미지를 통해 사람과 기계를 구별하는 프로그램이다 -->
+                        <p>정보 보호를 위해 아래 자동입력 방지 문자를 입력해주세요.</p>
+
+
+                        <img src="./pictures/captcha.PNG" alt="captcha" width="400" height="50">
+
+
+
+                        <input type="text" placeholder="위에 보이는 문자를 입력해주세요.">
+
+                    </div>
+
+                    <div class="submit_btn">
+                        <input id="sendNumbtn" type="submit" value="인증번호 받기">
+                    </div>
+                </div>
+
+                <div class="sform" id="show_email_form">
+                    <div class="input_info">
+                        <input type="text" id="l2" placeholder="이름">
+                        <input type="email" placeholder="이메일 주소 (@포함)" maxlength="25">
+                    </div>
+                    <div class="captcha_box">
+                        <p>정보 보호를 위해 아래 자동입력 방지 문자를 입력해주세요.</p>
+                        <img src="./pictures/captcha.PNG" alt="captcha" width="400" height="50">
+                        <input type="text" placeholder="위에 보이는 문자를 입력해주세요.">
+                    </div>
+
+                    <div class="submit_btn">
+                        <input id="sendNumbtn" type="submit" value="인증번호 받기">
+                    </div>
+                </div>
+                <div id="show1"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <p>아이디 확인 후 비밀번호를 재설정 할 수 있습니다.</p>
+
+    <a href="#typeid">비밀번호 찾기</a>
+
+    <input type="text" id="typeid" placeholder="아이디">
+    <button>확인</button>
+
+    <hr>
+    </div>
+</body>
+
+</html>

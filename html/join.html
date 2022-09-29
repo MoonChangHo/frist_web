@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+</head>
+
+<body>
+
+    <h1 onclick="location.href='index.html'">mWindow Shop</h1>
+    <table width="1000" height="300">
+        <caption>
+            <hr>
+            <b>[회원가입]</b>
+            <hr>
+        </caption>
+
+        <tr>
+            <td rowspan="10">1.정보입력</td>
+            <td>
+                <input type="text" name="name" placeholder="이름">
+                <label><input type="radio" name="gender" value="male">남성</label>
+                <label><input type="radio" name="gender" value="female">여성</label>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="ID" placeholder="회원 ID"></td>
+            <td><button> 중복검사</button></td>
+        </tr>
+
+        <tr>
+            <td><input type="password" name="password" placeholder="비밀번호"></td>
+            <td>&nbsp;</td>
+        </tr>
+        
+        <tr>
+            <td><input type="password" name="checkpw" placeholder="비밀번호 확인"></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="myPhoneCertification">
+                    <select name="tel1>
+                            <option value=" none">휴대폰 번호 선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select> -
+                    <input name="tel2" type="text" maxlength="4"> -
+                    <input name="tel3" type="text" maxlength="4">
+            <td>
+                <button> 인증 요청</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" maxlength="4" placeholder="인증코드" disabled>
+                <Button>확인</Button>
+                <td>&nbsp;</td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="myEmail">
+                    <!-- @입력 막기 -->
+                    <input type="text" name="email" placeholder="이메일"> @
+                    <select name="site">
+                        <option value="선택"></option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="hotmail.com">hotmail.com</option>
+                    </select>
+                </div>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <!-- 테이블 열에 수평선 추가 -->
+        <tr>
+            <td>
+                <hr>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="text" name="zipcode" placeholder="우편번호 찾기" readonly>
+                <button type="button">검색</button>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="address" disabled>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+
+        <!-- 테이블 열에 수평선 추가(colspan=열 합치기)  -->
+        <tr>
+            <td colspan="3">
+                <hr>
+            </td>
+        </tr>
+        <br>
+
+        <!-- label태그속에 input태그를 두어 텍스트 클릭시에도 체크 -->
+        <!-- <label for="input ID">...</label>-->
+        <tr>
+            <td rowspan="5"> 2.약관동의 </td>
+            <td><label for="all"><input type="checkbox" id="all">전체동의</label></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><hr></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td> <label for="a1"><input type="checkbox" id="a1">엠윈도우 이용약관</label></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td> <label for="a2"><input type="checkbox" id="a2">전자금융거래 이용약관</label></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><label for="a3"><input type="checkbox" id="a3">개인정보 수집 및 이용</label></td>
+            <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <hr>
+            </td>
+        </tr>
+
+    </table>
+
+    <p>
+        ▶가입은 <em>14세</em> 이상 고객만 가능합니다.<br>
+        ▶7세 이상 14세 미만 회원은 회원가입 후 모바일에서 본인인증, 법정대리인 인증을 진행하면 서비스를 이용하실 수 있습니다.<br>
+        ▶고객은 동의를 거부할 권리가 있으며 동의를 거부할 경우, 사이트 가입 또는 일부 서비스 이용이 제한됩니다.<br>
+    </p>
+
+    <!-- 조건에 따른 회원가입 성공여부를 판단하여 처리하려면 다음 방식은 좋지 않은거 같다...(수정필요)  -->
+    <a href="index.html">
+        <img src="./pictures/join.PNG" alt="회원가입" onclick="alert('회원가입 성공!!!')">
+    </a>
+
+    <!-- history.back()= 지난 페이지로 돌아감 -->
+    <a href="#" onClick="history.back()">
+        <img src="./pictures/cancel.PNG" alt="취소">
+    </a>
+
+</body>
+
+</html>

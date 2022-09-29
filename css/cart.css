@@ -1,0 +1,80 @@
+#cart_content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:200px;
+    margin-bottom: 100px;
+    max-width: 1200px;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: bold;
+}
+input[type=checkbox]{
+    display: none;
+}
+/* 클릭되기 전 체크박스 */
+.checkbox + label{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    /* 실제 옥션에 적용되고 있는 url */
+    background: url("https://pics.auction.co.kr/pc/sprite/cart/sprite_inputcustom@2x.png") no-repeat;
+    cursor: pointer;
+    background-size: 30px auto;
+}
+/* 클릭 후  */
+.checkbox:checked + label {
+    background-position: 0px -35px;
+}
+ 
+
+/* 상품 테이블 */
+table{
+    width: 100%;
+    text-align: left;
+}
+
+.mycart_wrap{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.mycart_wrap .orderPrice{
+    float:right;
+    margin-right: 20px;
+    margin-left:20px;
+    font-size: 20px;
+}
+.mycart_wrap .orderPrice strong{
+    font-size: 25px;
+}
+
+.mycart_wrap .coupon_btn{
+    margin: 10px;
+    margin-left: 0px;
+    font-size: 17px;
+    color:white;
+    border: none;
+    background:red ;
+}
+
+
+/* 전체합계  테이블 */
+.mycart_sum{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+.mycart_sum strong{
+    font-size: 20px;
+}
+.mycart_sum  .discount{
+    color: red;
+}
+
+
+/* 주문하기 버튼 */
+.order_btn{
+    margin-bottom:20px;
+    margin-right:10px;
+    text-align: right;
+}

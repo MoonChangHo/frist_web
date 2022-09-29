@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엠윈도우샵-장바구니</title>
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+
+    <div id="head_wrap">
+        <div id="main_header">
+            <div id="menubar">
+                <span class="m1"><a href="login.html">로그인</a></span>
+                <span class="m1"><a href="join2.html">회원가입</a></span>
+                <span class="m1" id="l_m1"><a href="cart.html">장바구니</a></span>
+            </div>
+
+            <div id="logo_line">
+                <a href="index.html"><img src="/html/pictures/logo.png" alt="로고"></a>
+
+                <div id="searchForm">
+                    <form id="searchForm1">
+                        <input class="search_txt" type="text">
+                        <Button class="serach_btn"><img src="/html/pictures/search.png"></Button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!-- css를 통해 특정 리스트만 보이게 할수있다.  -->
+        <div id="nav">
+            <ul class="dep1">
+                <li>
+                    <a href="#">카테고리</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">컴퓨터</a>
+                            <ul class="dep3">
+                                <li><a href="#">노트북/pc</a></li>
+                                <li><a href="#">모니터/프린터</a></li>
+                                <li><a href="#">PC주변기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의류</a>
+                            <ul class="dep3">
+                                <li><a href="#">여성의류</a></li>
+                                <li><a href="#">남성의류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가구/인테리어</a>
+                            <ul class="dep3">
+                                <li><a href="#">침구/커튼</a></li>
+                                <li><a href="#">생활용품</a></li>
+                                <li><a href="#">주방용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">식품</a>
+                            <ul class="dep3">
+                                <li><a href="#">신선식품</a></li>
+                                <li><a href="#">건강식품</a></li>
+                                <li><a href="#">커피/음료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">중고거래</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">종류</a>
+                            <ul class="dep3">
+                                <li><a href="#">컴퓨터</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">가구/인테리어</a></li>
+                                <li><a href="#">식품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">내 근처</a>
+                            <ul class="dep3">
+                                <li><a href="#">위치설정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="iframe1">할인상품</a>
+                    <ul class="dep2">
+                        <li><a href="#">초특가 보러가기</a>
+                            <ul class="dep3">
+                                <li><a href="#">당일배송</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">할인정보</a>
+                            <ul class="dep3">
+                                <li><a href="#">~20%</a></li>
+                                <li><a href="#">21~40%</a></li>
+                                <li><a href="#">41~60%</a></li>
+                                <li><a href="#">61~80%</a></li>
+                                <li><a href="#">81~99%</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">무료나눔</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="iframe1">고객센터</a>
+
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">구매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">회원정보</a></li>
+                                <li><a href="#">주문</a></li>
+                                <li><a href="#">결제</a></li>
+                                <li><a href="#">배송</a></li>
+                                <li><a href="#">취소/환불</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">판매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">나의정보관리</a></li>
+                                <li><a href="#">상품/판매관리</a></li>
+                                <li><a href="#">결제/정산/이용료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="cart_content">
+
+        <h2 class="name">장바구니</h2>
+
+        <div class="all_box">
+            <input type="checkbox" id="ckbox" class="checkbox">
+            <label for="ckbox">&nbsp;</label>
+            <label for="ckbox">전체선택</label>
+            <button> 선택삭제</button>
+        </div>
+        <div class="mycart_wrap">
+            <table>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="single_box">
+                            <input type="checkbox"id="a1" class="checkbox">
+                            <label for="a1">&nbsp;</label>
+                            <label for="a1">T-Shirt</label>
+                        </div>
+                    </th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;할인금액&nbsp;</th>
+                    <th>&nbsp;할인적용금액&nbsp;</th>
+                    <th>&nbsp;배송비&nbsp;</th>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="checkbox"><img src="pictures/shirt1.png" alt="셔츠1" width="75" height="75">
+                    </td>
+                    <td>
+                        노란색 티셔츠
+                        <input type="number" min="1" maxlength="3" value="1">
+                        <strong>&nbsp;19,000원&nbsp;</strong>
+                    </td>
+                    <td>
+                        <strong>-1,900원</strong><br>
+                        <button type="button" class="coupon_btn">쿠폰적용</button>
+                    </td>
+                    <td>
+                        <strong>17,100원</strong><br>
+                    </td>
+                    <td>
+                        <p>무료배송</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="5">
+                        <span class="orderPrice">주문금액
+                        <strong>0</strong>원</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="mycart_wrap">
+            <table>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="single_box">
+                            <input type="checkbox"id="a2" class="checkbox">
+                            <label for="a2">&nbsp;</label>
+                            <label for="a2">Food</label>
+                        </div>
+                    </th>
+                    <th>&nbsp;</th>
+                    <th>&nbsp;할인금액&nbsp;</th>
+                    <th>&nbsp;할인적용금액&nbsp;</th>
+                    <th>&nbsp;배송비&nbsp;</th>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="checkbox"><img src="/html/pictures/rice1.png" alt="쌀" width="75" height="75">
+                    </td>
+                    <td>
+                        아산 쌀 10kg
+                        <input type="number" min="1" maxlength="3" value="1">
+                        <strong>&nbsp;30,000원&nbsp;</strong>
+                    </td>
+                    <td>
+                        <strong>-4500원</strong><br>
+                        <button type="button" class="coupon_btn">쿠폰적용</button>
+                    </td>
+                    <td>
+                        <strong>25,500원</strong><br>
+                    </td>
+                    <td>
+                        <p>무료배송</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                    <td colspan="5">
+                        <span class="orderPrice">주문금액
+                            <strong>0</strong>원</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="mycart_sum">
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <hr>
+                    </td>
+                </tr>        
+                <tr>
+                    <td rowspan="9">
+                        <strong>전체합계</strong>
+                    </td>
+                    <td>
+                        상품수 
+                    </td>
+                    <td>
+                        0개
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        상품금액 
+                    </td>
+                    <td>
+                        0원
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        할인금액 
+                    </td>
+                    <td>
+                        <span class="discount">-0원</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        배송비 
+                    </td>
+                    <td>
+                        0원
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>전체 주문금액 </strong>
+                    </td>
+                    <td>
+                        <strong> 0</strong>원
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="order_btn"> 
+            <a href="index.html">
+                <img src="/html/pictures/order.PNG" alt="주문하기"  onclick="alert('주문 성공!!!')">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

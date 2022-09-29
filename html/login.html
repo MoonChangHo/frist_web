@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엠윈도우샵-로그인</title>
+    <link type="text/css" rel="stylesheet" href="/css/main.css">
+    <link type="text/css" rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+
+    <div id="head_wrap">
+        <div id="main_header">
+            <div id="menubar">
+                <span class="m1"><a href="login.html">로그인</a></span>
+                <span class="m1"><a href="join2.html">회원가입</a></span>
+                <span class="m1" id="l_m1"><a href="cart.html">장바구니</a></span>
+            </div>
+
+            <div id="logo_line">
+                <a href="index.html"><img src="/html/pictures/logo.png" alt="로고"></a>
+
+                <div id="searchForm">
+                    <form id="searchForm1">
+                        <input class="search_txt" type="text">
+                        <Button class="serach_btn"><img src="/html/pictures/search.png"></Button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!-- css를 통해 특정 리스트만 보이게 할수있다.  -->
+        <div id="nav">
+            <ul class="dep1">
+                <li>
+                    <a href="#">카테고리</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">컴퓨터</a>
+                            <ul class="dep3">
+                                <li><a href="#">노트북/pc</a></li>
+                                <li><a href="#">모니터/프린터</a></li>
+                                <li><a href="#">PC주변기기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의류</a>
+                            <ul class="dep3">
+                                <li><a href="#">여성의류</a></li>
+                                <li><a href="#">남성의류</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가구/인테리어</a>
+                            <ul class="dep3">
+                                <li><a href="#">침구/커튼</a></li>
+                                <li><a href="#">생활용품</a></li>
+                                <li><a href="#">주방용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">식품</a>
+                            <ul class="dep3">
+                                <li><a href="#">신선식품</a></li>
+                                <li><a href="#">건강식품</a></li>
+                                <li><a href="#">커피/음료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">중고거래</a>
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">종류</a>
+                            <ul class="dep3">
+                                <li><a href="#">컴퓨터</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">가구/인테리어</a></li>
+                                <li><a href="#">식품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">내 근처</a>
+                            <ul class="dep3">
+                                <li><a href="#">위치설정</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="iframe1">할인상품</a>
+                    <ul class="dep2">
+                        <li><a href="#">초특가 보러가기</a>
+                            <ul class="dep3">
+                                <li><a href="#">당일배송</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">할인정보</a>
+                            <ul class="dep3">
+                                <li><a href="#">~20%</a></li>
+                                <li><a href="#">21~40%</a></li>
+                                <li><a href="#">41~60%</a></li>
+                                <li><a href="#">61~80%</a></li>
+                                <li><a href="#">81~99%</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">무료나눔</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="iframe1">고객센터</a>
+
+                    <ul class="dep2">
+                        <li>
+                            <a href="#">구매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">회원정보</a></li>
+                                <li><a href="#">주문</a></li>
+                                <li><a href="#">결제</a></li>
+                                <li><a href="#">배송</a></li>
+                                <li><a href="#">취소/환불</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">판매고객</a>
+                            <ul class="dep3">
+                                <li><a href="#">나의정보관리</a></li>
+                                <li><a href="#">상품/판매관리</a></li>
+                                <li><a href="#">결제/정산/이용료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="login_wrap">
+        <div id="p">
+            <p>로그인</p>
+        </div>
+        <!-- button type은 submit,reset,button으로 default값은 submit이다. -->
+        <div id="layout_left">
+            <div class="left_box">
+
+                <div class="who">
+                    <ul style="font-size: 0px;">
+                        <li><button type="button" id="member_btn">회원</button></li>
+                        <li><button type="button" id="no_member_btn">비회원 주문조회</button></li>
+                    </ul>
+                </div>
+
+                <div class="input_login_form">
+                    <input type="text" placeholder="아이디">
+                    <input type="password" placeholder="비밀번호">
+                    <input type="submit" value="로그인">
+                </div>
+                
+                <div class="etc">
+                    <div class="save_login">
+                        <label for="rememberid"><input type="checkbox" id="rememberid">아이디 저장</label>
+                    </div>
+                    <div class="link_login">
+                        <a href="findidpw.html">id/pw 찾기</a>ㅣ
+                        <a href="join2.html">회원가입 </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="layout_right">
+            <div class="right_box">
+                <p> 오른쪽 레이아웃</p>
+                <p> *광고*</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

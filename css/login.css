@@ -1,0 +1,100 @@
+input:focus{
+    outline:0.5px solid black;
+}
+
+#login_wrap{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top:300px;
+    max-width: 1000px;
+}
+
+#p>p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#layout_left{
+    float: left;
+    width: 50%;
+}
+
+#layout_right{
+    float:right;
+    width: 50%;
+}
+
+/* 왼쪽 오른쪽 박스 패딩값 조절 */
+.left_box, .right_box{
+    padding: 10px;
+}
+
+/* 왼쪽 레이아웃 단락별 폭 정리 */
+.who, .input_login_form{
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.left_box>.who>ul>li{
+    display: inline;
+    margin: 0px;
+
+}
+.left_box>.who>ul>li>button{
+    width: 50%;
+    height: 50px;
+    border: 0.5px solid rgb(175, 174, 174);
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#member_btn:active  {
+    background-color: white;
+    border:0.5px solid black;
+    border-bottom: 0.5px solid white;
+}
+
+#no_member_btn:active  {
+    background-color: white;
+    border:0.5px solid black;
+    border-bottom: 0.5px solid white;
+}
+
+
+.input_login_form >input{
+    border: 0.5px solid rgb(175, 174, 174);
+    background-color: #f3f3f3;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding:5px;
+    box-sizing : border-box;
+}
+
+
+.input_login_form >input[type="submit"]{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 5px;
+    outline:none;
+}
+.etc>div{
+    display: inline;
+}    
+.save_login{
+    float: left;
+}
+
+.link_login{
+    float: right;
+}
+
+/* 오른쪽 레이아웃 */
+.right_box>p{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
